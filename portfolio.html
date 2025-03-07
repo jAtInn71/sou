@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<body>
+<nav>
+    <div class="logo">
+       Jatin Kavani</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#pro">Projects</a></li>
+        <li><a href="#contect">Contect Me</a></li>
+        <button id="theme-toggle" class="toggle-button">☀️</button>
+
+</nav>
+    </ul>
+</nav> 
+<main>
+    <section id="home"class="firstsection">
+        <div class="leftpart">Hello, My name is <span class="name1">Jatin Kavani</span>
+            <div style="display: contents;">And I'm <br> <span class="name2"><span id="element"></span></span>
+                <span id="element"></span></div>
+                <div class="button"><a href="JATIN KAVANI resume por.pdf" download><button>Download Resume</button></a></div>
+                
+        </div>
+        
+        <div class="rightpart"><img src="HNS11592.JPG"></div>
+    </section>
+    <hr>
+    <section id="about" class="thirdsection">
+        <h2>About Me</h2>
+        <div class="leftpart-about">
+                <p>Hello! I'm Jatin, a passionate Web Developer & Cyber Security learner with a strong focus <br>on building modern,user-friendly,
+                     and scalable applications.<br> I love solving problems and creating innovative solutions using the latest technologies.<br>My focus is on collaboration and continuous learning.
+                    <br> I serve as <span class="webmaster" id="webmaster"></span> at silver oak university IEEE Women In Engineering Student Branch.<br> I am also a member of AWS Cloud and Google Developer Group.
+                 </p>
+                </div>   
+            </section>
+    <hr>
+        
+    <section id="skills"class="secondsection">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="container1">
+                <h3>Technical Skills</h3>
+                <div class="skill">
+                    <div class="skill-name">html,css</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="background: #61DBFB;" data-percent="90">90%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">C</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="background: #68A063;" data-percent="85">85%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">C++</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="background: #FFD43B; color: black;" data-percent="80">80%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Java</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="background: #4DB33D;" data-percent="75">75%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Javascript</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="background: #38B2AC;" data-percent="70">70%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container2">
+                <h3>Non-technical Skills</h3>
+                <div class="skill">
+                    <div class="skill-name">Communication</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="background: #61DBFB;" data-percent="90">90%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Team Work</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="background: #68A063;" data-percent="85">85%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Problem Solving</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="background: #FFD43B; color: black;" data-percent="80">80%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Leadership</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="background: #4DB33D;" data-percent="75">75%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Time Managment</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="background: #38B2AC;" data-percent="95">95%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Animate Skill Bars
+            document.addEventListener("DOMContentLoaded", function() {
+                const progressBars = document.querySelectorAll(".progress");
+                progressBars.forEach(bar => {
+                    const percent = bar.getAttribute("data-percent");
+                    setTimeout(() => {
+                        bar.style.width = percent + "%";
+                    }, 500);
+                });
+            });
+        </script>
+    </section>
+    <hr>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+          <h3>Project 1: Portfolio Website</h3>
+          <p>A responsive personal portfolio showcasing my skills, projects, and experience.</p>
+        </div>
+        <div class="project">
+          <h3>Project 2: E-commerce Web App</h3>
+          <p>Developed a full-stack e-commerce application using the MERN stack.</p>
+        </div>
+        </section>
+        <hr>      
+    <section id="contact" class="contact-section">
+        <h2>Contact <span>Me</span></h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <input type="text" placeholder="Subject" required />
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+      <hr>
+      <!-- HTML -->
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>
+          We are a company dedicated to providing high-quality products and exceptional service.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Me</h3>
+        <div class="social-buttons">
+          <a href="https://facebook.com" class="social-button facebook" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com" class="social-button twitter" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://instagram.com" class="social-button instagram" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="fo">&copy; 2025 Your Website. All Rights Reserved.</p>
+    </div>
+  
+  
+</main>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    const toggleButton = document.getElementById("theme-toggle");
+const body = document.body;
+
+toggleButton.addEventListener("click", () => {
+    body.classList.toggle("light-mode");
+
+    if (body.classList.contains("light-mode")) {
+        toggleButton.textContent = "🌙";
+        localStorage.setItem("theme", "light");
+    } else {
+        toggleButton.textContent = "☀️";
+        localStorage.setItem("theme", "dark");
+    }
+});
+
+// Load saved theme
+if (localStorage.getItem("theme") === "light") {
+    body.classList.add("light-mode");
+    toggleButton.textContent = "🌙";
+}
+
+</script>    
+ <!-- Setup and start animation! -->
+ <script class="Webdeveloper">
+    var typed = new Typed('#element', {
+      strings: ['Webdeveloper.', '&amp; Fullstake Developer.' , ' &amp; Cybersecurity enthusiast.'],
+      typeSpeed: 50,
+    });
+    var typed = new Typed('#webmaster', {
+      strings: ['Webmaster'],
+      typeSpeed: 50,
+    });
+</script>
+
+</body>
+</html>
